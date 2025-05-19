@@ -1,26 +1,29 @@
 {
   "name": "scalable-vega",
-  "version": "0.0.1",
-  "repository": "git@github.com:vega/scalable-vega.git",
-  "author": "Dominik Moritz <domoritz@gmail.com>",
-  "license": "BSD-3-Clause",
-  "private": true,
-  "dependencies": {
-    "@heavyai/connector": "^7.0.0",
-    "apache-arrow": "^19.0.0",
-    "gh-pages": "^6.3.0",
-    "vega": "^5.32.0",
-    "vega-transform-omnisci-core": "^0.0.12"
-  },
+  "version": "1.0.0",
+  "description": "Stack Overflow Developer Survey 2024 Visualization",
+  "main": "server.js",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build --public-url '/scalable-vega/' index.html",
-    "deploy": "yarn build && gh-pages -d dist"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
   },
   "devDependencies": {
-    "buffer": "^5.5.0",
-    "parcel": "^2.13.3",
-    "process": "^0.11.10",
-    "typescript": "^5.7.3"
-  }
+    "nodemon": "^3.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vega/scalable-vega.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/vega/scalable-vega/issues"
+  },
+  "homepage": "https://github.com/vega/scalable-vega#readme"
 }

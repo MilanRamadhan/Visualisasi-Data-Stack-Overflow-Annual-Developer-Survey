@@ -1,0 +1,146 @@
+{
+  "schema": {
+    "fields": [
+      {
+        "name": "Country",
+        "type": "string",
+        "values": ["United States", "India", "Germany", "United Kingdom", "Canada", "France", "Brazil", "Poland", "Netherlands", "Australia", "Indonesia", "Other"]
+      },
+      {
+        "name": "Gender",
+        "type": "string",
+        "values": ["Man", "Woman", "Non-binary", "Prefer not to say", "Prefer to self-describe"]
+      },
+      {
+        "name": "CompTotal",
+        "type": "number"
+      },
+      {
+        "name": "YearsCode",
+        "type": "string",
+        "values": ["Less than 1 year", "1-2 years", "3-5 years", "6-8 years", "9-11 years", "12-14 years", "15-17 years", "18-20 years", "21-23 years", "24-26 years", "27-29 years", "30 or more years"]
+      },
+      {
+        "name": "YearsCodePro",
+        "type": "string",
+        "values": ["Less than 1 year", "1-2 years", "3-5 years", "6-8 years", "9-11 years", "12-14 years", "15-17 years", "18-20 years", "21-23 years", "24-26 years", "27-29 years", "30 or more years"]
+      },
+      {
+        "name": "Age",
+        "type": "string",
+        "values": ["Under 18 years old", "18-24 years old", "25-34 years old", "35-44 years old", "45-54 years old", "55-64 years old", "65 years or older", "Prefer not to say"]
+      },
+      {
+        "name": "EdLevel",
+        "type": "string",
+        "values": [
+          "Primary/elementary school", "Secondary school", "Some college/university study without earning a degree",
+          "Associate degree", "Bachelor’s degree", "Master’s degree", "Professional degree", "Something else"
+        ]
+      },
+      {
+        "name": "RemoteWork",
+        "type": "string",
+        "values": ["Remote", "In-person", "Hybrid (some remote, some in-person)"]
+      },
+      {
+        "name": "OpSysProfessionalUse",
+        "type": "string",
+        "values": ["Windows", "MacOS", "Linux", "Other"]
+      },
+      {
+        "name": "OpSysPersonalUse",
+        "type": "string",
+        "values": ["Windows", "MacOS", "Linux", "Android", "iOS", "Other"]
+      },
+      {
+        "name": "PlatformHaveWorkedWith",
+        "type": "array",
+        "values": ["AWS", "Google Cloud", "Microsoft Azure", "Heroku", "Netlify", "Vercel", "Other"]
+      },
+      {
+        "name": "PlatformWantToWorkWith",
+        "type": "array",
+        "values": ["AWS", "Google Cloud", "Microsoft Azure", "Heroku", "Netlify", "Vercel", "Other"]
+      },
+      {
+        "name": "LanguageHaveWorkedWith",
+        "type": "array",
+        "values": [
+          "Python", "JavaScript", "TypeScript", "Java", "C#", "C++", "C", "Go", "Rust", "PHP", "Ruby", "Swift", "Kotlin", "SQL", "Other"
+        ]
+      },
+      {
+        "name": "LanguageWantToWorkWith",
+        "type": "array",
+        "values": [
+          "Python", "JavaScript", "TypeScript", "Java", "C#", "C++", "C", "Go", "Rust", "PHP", "Ruby", "Swift", "Kotlin", "SQL", "Other"
+        ]
+      },
+      {
+        "name": "DatabaseHaveWorkedWith",
+        "type": "array",
+        "values": ["MySQL", "PostgreSQL", "SQLite", "MongoDB", "Redis", "Firebase", "Microsoft SQL Server", "Other"]
+      },
+      {
+        "name": "DatabaseWantToWorkWith",
+        "type": "array",
+        "values": ["MySQL", "PostgreSQL", "SQLite", "MongoDB", "Redis", "Firebase", "Microsoft SQL Server", "Other"]
+      },
+      {
+        "name": "WebframeHaveWorkedWith",
+        "type": "array",
+        "values": [
+          "React", "Vue.js", "Angular", "Next.js", "Express", "Django", "Flask", "ASP.NET", "Svelte", "Other"
+        ]
+      },
+      {
+        "name": "WebframeWantToWorkWith",
+        "type": "array",
+        "values": [
+          "React", "Vue.js", "Angular", "Next.js", "Express", "Django", "Flask", "ASP.NET", "Svelte", "Other"
+        ]
+      },
+      {
+        "name": "AIToolCurrentlyUsing",
+        "type": "array",
+        "values": [
+          "ChatGPT", "GitHub Copilot", "Bing AI", "Claude", "Replit Ghostwriter", "Codeium", "Amazon Q", "Other"
+        ]
+      },
+      {
+        "name": "AIToolInterestedInUsing",
+        "type": "array",
+        "values": [
+          "ChatGPT", "GitHub Copilot", "Bing AI", "Claude", "Replit Ghostwriter", "Codeium", "Amazon Q", "Other"
+        ]
+      },
+      {
+        "name": "BuyNewTool",
+        "type": "string",
+        "values": ["Yes", "No", "I don't know"]
+      },
+      {
+        "name": "OrgSize",
+        "type": "string",
+        "values": [
+          "Just me", "2 to 9 employees", "10 to 19", "20 to 99", "100 to 499", "500 to 999", "1,000 to 4,999", "5,000 to 9,999", "10,000 or more", "I don’t know"
+        ]
+      },
+      {
+        "name": "Industry",
+        "type": "string",
+        "values": [
+          "Software Development", "Banking/Finance", "Education", "Healthcare", "Retail", "Telecommunications", "Government", "Other"
+        ]
+      },
+      {
+        "name": "WorkExp",
+        "type": "string",
+        "values": ["0", "1-5", "6-10", "11-15", "16-20", "21+"]
+      }
+    ],
+    "primaryKey": ["Country", "Gender", "YearsCodePro"],
+    "description": "Schema for modeling developer survey data with AI, compensation, and tech preferences"
+  }
+}
